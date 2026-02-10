@@ -6,7 +6,8 @@ import * as vscode from 'vscode';
 // import * as myExtension from '../../extension';
 
 suite('Extension Test Suite', () => {
-	vscode.window.showInformationMessage('Start all tests.');
+	// Non-interactive log to indicate test start; safe for headless CI
+	console.log('Start all tests.');
 
 	test('Sample test', () => {
 		assert.strictEqual(-1, [1, 2, 3].indexOf(5));
