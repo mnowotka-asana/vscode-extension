@@ -4,7 +4,7 @@
   "description": "A simple hello world extension",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.109.0"
+    "vscode": "^1.108.0"
   },
   "categories": [
     "Other"
