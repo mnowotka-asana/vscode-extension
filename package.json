@@ -10,16 +10,34 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:hello-world.helloWorld"
+    "onCommand:hello-world.helloWorld",
+    "onView:asanaView"
   ],
   "main": "./dist/extension.js",
   "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "asana",
+          "title": "Asana",
+          "icon": "media/asana.svg"
+        }
+      ]
+    },
     "commands": [
       {
         "command": "hello-world.helloWorld",
         "title": "Hello World"
       }
-    ]
+    ],
+    "views": {
+      "asana": [
+        {
+          "id": "asanaView",
+          "name": "Asana"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
